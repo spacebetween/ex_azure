@@ -21,9 +21,9 @@ defmodule ExAzure.Mixfile do
 
   defp deps do
     [
-      {:erlazure, github: "gullitmiranda/erlazure", manager: :rebar},
-      {:ex_doc  , "~> 0.11.5", only: [:dev, :test]},
-      {:earmark , "~> 0.2.1" , only: [:dev, :test]},
+      {:erlazure, git: "https://github.com/dkataskin/erlazure.git"},
+      {:ex_doc  , "~> 0.27", only: [:dev, :test]},
+      {:earmark , "~> 1.4.39" , only: [:dev, :test]},
     ]
   end
 
