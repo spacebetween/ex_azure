@@ -1,4 +1,5 @@
 defmodule ExAzure.Utils do
+  def normalize_to_charlist([]), do: []
   def normalize_to_charlist({k, v}) do
     {normalize_to_charlist(k), normalize_to_charlist(v)}
   end
